@@ -80,7 +80,35 @@ textarea {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 30px 40px 0 40px;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.button-container .button {
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 52px;
+  width: 100%;
+  color: #292929;
+  font-family: "Georgia_Normal";
+  font-size: 17px;
+  line-height: 130%;
+  cursor: pointer;
 }
 
 @font-face {
@@ -160,4 +188,82 @@ textarea {
 }
 .navigate__list .navigate__link:hover {
   color: #FAFAFA;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 42px;
+     -moz-column-gap: 42px;
+          column-gap: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 850px) {
+  .welcome {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 100px;
+  }
+}
+.welcome.welcome_modifier {
+  padding: 90px 0 0 0;
+}
+@media screen and (max-width: 850px) {
+  .welcome.welcome_modifier {
+    padding: 60px 0 0 0;
+  }
+}
+.welcome .welcome__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 42px;
+}
+.welcome .welcome__content .welcome__title {
+  font-family: "Georgia_Normal";
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+  max-width: 310px;
+  width: 100%;
+}
+.welcome .welcome__content .welcome__text {
+  font-family: "Arial_Normal";
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+  max-width: 460px;
+  width: 100%;
+}
+.welcome .welcome__image img {
+  max-width: 100%;
+}
+
+.button-container.button-container_welcome {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+@media screen and (max-width: 850px) {
+  .button-container.button-container_welcome {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.button-container.button-container_welcome .button.button_welcome {
+  max-width: 207px;
+  background: #F1CDB3;
+}
+.button-container.button-container_welcome .button.button_welcome:hover {
+  background: #FDDCC4;
 }

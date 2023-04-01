@@ -8,5 +8,26 @@
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 30px 40px 0 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+
+
+  .button {
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 100%;
+    color: $dark-color;
+    font-family: 'Georgia_Normal';
+    font-size: 17px;
+    line-height: 130%;
+    cursor: pointer;
+
+  }
 }

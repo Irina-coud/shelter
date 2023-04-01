@@ -1,0 +1,8 @@
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.welcome.welcome_modifier {
+  padding: 90px 0 0 0;
+}

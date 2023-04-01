@@ -1,0 +1,69 @@
+.welcome {
+  display: flex;
+  column-gap: 42px;
+  align-items: center;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    row-gap: 100px;
+  }
+
+  &.welcome_modifier {
+    padding: 90px 0 0 0;
+
+    @media screen and (max-width: 850px) {
+      padding: 60px 0 0 0;
+    }
+  }
+
+  .welcome__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+
+    .welcome__title {
+      font-family: 'Georgia_Normal';
+      font-size: 44px;
+      line-height: 130%;
+      color: $white-color;
+      max-width: 310px;
+      width: 100%;
+    }
+
+    .welcome__text {
+      font-family: 'Arial_Normal';
+      font-size: 15px;
+      line-height: 160%;
+      color: $grey-light-color;
+      max-width: 460px;
+      width: 100%;
+    }
+  }
+
+  .welcome__image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.button-container {
+  &.button-container_welcome {
+    justify-content: start;
+
+    @media screen and (max-width: 850px) {
+      justify-content: center;
+    }
+
+    .button {
+      &.button_welcome {
+        max-width: 207px;
+        background: $primary-color;
+
+        &:hover {
+          background: $primary-light-color;
+        }
+      }
+    }
+  }
+}
