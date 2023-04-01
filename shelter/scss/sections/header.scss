@@ -1,0 +1,61 @@
+@import '../common/constants.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .logo__title {
+      font-family: 'Georgia_Normal';
+      font-size: 32px;
+      line-height: 110%;
+      color: $primary-color;
+    }
+
+    .logo__subtitle {
+      font-family: 'Arial_Normal';
+      font-size: 13px;
+      line-height: 15px;
+      color: $white-color;
+    }
+  }
+}
+
+.navigate__list {
+  display: flex;
+  column-gap: 35px;
+  align-items: center;
+  height: 100%;
+
+  .navigate__item {
+    &:active {
+      ::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: $primary-color;
+      }
+    }
+  }
+
+  .navigate__link {
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 160%;
+    color: $grey-light-color;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+    &:hover {
+      color: $milky-color;
+    }
+  }
+}

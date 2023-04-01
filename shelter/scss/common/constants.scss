@@ -1,0 +1,22 @@
+$primary-color: #F1CDB3;
+$white-color: #FFFFFF;
+$grey-light-color: #CDCDCD;
+$milky-color: #FAFAFA;
+
+@font-face {
+  font-family: 'Arial_Normal';
+  src: url('../../fonts/arial.woff2') format("woff2"),
+    url('../../fonts/arial.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Georgia_Normal';
+  src: url('../../fonts/georgia.woff2') format("woff2"),
+    url('../../fonts/georgia.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}

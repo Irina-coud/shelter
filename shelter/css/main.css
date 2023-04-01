@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol li,
+ul li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  font-size: 14px;
+  line-height: 1;
+  height: 100%;
+}
+
+input[type=text],
+input[type=search] input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+@font-face {
+  font-family: "Arial_Normal";
+  src: url("../../fonts/arial.woff2") format("woff2"), url("../../fonts/arial.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Georgia_Normal";
+  src: url("../../fonts/georgia.woff2") format("woff2"), url("../../fonts/georgia.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+.wrap.dark {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+@font-face {
+  font-family: "Arial_Normal";
+  src: url("../../fonts/arial.woff2") format("woff2"), url("../../fonts/arial.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Georgia_Normal";
+  src: url("../../fonts/georgia.woff2") format("woff2"), url("../../fonts/georgia.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+}
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+.header .logo .logo__title {
+  font-family: "Georgia_Normal";
+  font-size: 32px;
+  line-height: 110%;
+  color: #F1CDB3;
+}
+.header .logo .logo__subtitle {
+  font-family: "Arial_Normal";
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.navigate__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.navigate__list .navigate__item:active ::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: #F1CDB3;
+}
+.navigate__list .navigate__link {
+  font-family: "Arial";
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.navigate__list .navigate__link:hover {
+  color: #FAFAFA;
+}
