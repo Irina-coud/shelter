@@ -96,6 +96,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 .button-container .button {
   border-radius: 100px;
@@ -328,4 +329,110 @@ textarea {
 }
 .about__content .text_about {
   color: #4C4C4C;
+}
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.catalog .title_catalog {
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+  max-width: 400px;
+}
+
+.button-container.button-container_catalog {
+  max-width: 261px;
+}
+.button-container.button-container_catalog .button.button_catalog {
+  background: #F1CDB3;
+}
+.button-container.button-container_catalog .button.button_catalog:hover {
+  background: #FDDCC4;
+}
+
+.slider .slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 53px;
+     -moz-column-gap: 53px;
+          column-gap: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider .slider__wrap {
+  display: inline-block;
+  max-width: 990px;
+  overflow: hidden;
+}
+.slider .slider__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 90px;
+     -moz-column-gap: 90px;
+          column-gap: 90px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.slider .slider__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+  min-height: 435px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAFAFA;
+}
+.slider .slider__card .card__title {
+  font-family: "Georgia_Normal";
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.slider .slider__card .button-container_card {
+  max-width: 187px;
+}
+.slider .slider__card .button-container_card .button_card {
+  border: 2px solid #F1CDB3;
+}
+.slider .slider__card .button-container_card .button_card:hover {
+  background: #F1CDB3;
+}
+
+.slider__button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.slider__button.slider__button_prev {
+  background: url(../../assets/icon/catalog/slider-prev.svg) center center/14px no-repeat;
+}
+.slider__button.slider__button_next {
+  background: url(../../assets/icon/catalog/slider-next.svg) center center/14px no-repeat;
 }

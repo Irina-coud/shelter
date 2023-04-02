@@ -1,0 +1,96 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  align-items: center;
+  justify-content: center;
+
+  .title_catalog {
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $dark-light-color;
+    max-width: 400px;
+  }
+}
+
+.button-container {
+  &.button-container_catalog {
+    max-width: 261px;
+
+    .button {
+      &.button_catalog {
+        background: $primary-color;
+
+        &:hover {
+          background: $primary-light-color;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  .slider__container {
+    display: flex;
+    column-gap: 53px;
+    align-items: center;
+  }
+
+  .slider__wrap {
+    display: inline-block;
+    max-width: 990px;
+    overflow: hidden;
+  }
+
+  .slider__track {
+    display: flex;
+    column-gap: 90px;
+    transition: all 0.5s ease;
+  }
+
+  .slider__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    min-height: 435px;
+    align-items: center;
+    background: $milky-color;
+
+    .card__title {
+      font-family: 'Georgia_Normal';
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+      color: $dark-light-color;
+    }
+
+    .button-container_card {
+      max-width: 187px;
+
+      .button_card {
+        border: 2px solid $primary-color;
+
+        &:hover {
+          background: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.slider__button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid $primary-color;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &.slider__button_prev {
+    background: url(../../assets/icon/catalog/slider-prev.svg) center center / 14px no-repeat;
+  }
+
+  &.slider__button_next {
+    background: url(../../assets/icon/catalog/slider-next.svg) center center / 14px no-repeat;
+  }
+}
