@@ -21,22 +21,15 @@
     flex-direction: column;
     row-gap: 42px;
 
-    .welcome__title {
-      font-family: 'Georgia_Normal';
+    .title_welcome {
       font-size: 44px;
-      line-height: 130%;
       color: $white-color;
       max-width: 310px;
-      width: 100%;
     }
 
-    .welcome__text {
-      font-family: 'Arial_Normal';
-      font-size: 15px;
-      line-height: 160%;
+    .text_welcome {
       color: $grey-light-color;
       max-width: 460px;
-      width: 100%;
     }
   }
 

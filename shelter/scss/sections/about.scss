@@ -1,0 +1,34 @@
+.about {
+  display: flex;
+  align-items: center;
+  column-gap: 120px;
+  justify-content: center;
+
+  .about__image {
+    display: flex;
+    justify-content: end;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  max-width: 430px;
+  width: 100%;
+
+  .title_about {
+    font-size: 35px;
+    color: $dark-light-color;
+    letter-spacing: 0.06em;
+    max-width: 370px;
+  }
+
+  .text_about {
+    color: $dark-middle-color;
+  }
+}
