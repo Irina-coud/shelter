@@ -45,6 +45,18 @@
   font-family: 'Georgia_Normal';
   line-height: 130%;
   width: 100%;
+
+  &.title_block {
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $dark-light-color;
+    max-width: 400px;
+  }
+
+  &.title_help {
+    max-width: 310px;
+  }
 }
 
 .text {

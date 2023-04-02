@@ -1,0 +1,36 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.help-list {
+  display: flex;
+  column-gap: 120px;
+  flex-wrap: wrap;
+  max-width: 1030px;
+  width: 100%;
+  row-gap: 55px;
+  justify-content: center;
+}
+
+.help-list__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .help-list__title {
+    font-family: 'Georgia_Normal';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $dark-light-color;
+  }
+}
