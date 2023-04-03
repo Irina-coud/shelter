@@ -6,6 +6,10 @@
   &.light {
     background: $milky-light-color;
   }
+
+  &.footer {
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  }
 }
 
 .container {
@@ -16,6 +20,10 @@
 
   &.container_block {
     padding: 80px 40px 100px 40px;
+  }
+
+  &.container_footer {
+    padding: 40px 40px 0 40px;
   }
 }
 
@@ -61,6 +69,11 @@
   &.title_donate {
     text-align: start;
     max-width: 300px;
+  }
+
+  &.title_footer {
+    text-align: start;
+    color: $white-color;
   }
 }
 
