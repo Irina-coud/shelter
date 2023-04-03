@@ -133,6 +133,10 @@ textarea {
 .title.title_help {
   max-width: 310px;
 }
+.title.title_donate {
+  text-align: start;
+  max-width: 300px;
+}
 
 .text {
   font-family: "Arial_Normal";
@@ -494,4 +498,77 @@ textarea {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
+}
+
+.donate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 60px;
+}
+
+.donate__content {
+  max-width: 380px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+.donate__subtitle {
+  font-family: "Georgia_Normal";
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.donate__text {
+  font-family: "Arial_Normal";
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+}
+
+.donate__button {
+  max-width: 349px;
+  width: 100%;
+  height: 43px;
+  background: #F1CDB3;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.donate__button img {
+  max-width: 30px;
+  width: 100%;
+}
+.donate__button button {
+  font-family: "Georgia_Normal";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  background: #F1CDB3;
 }
